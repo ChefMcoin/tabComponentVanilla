@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="tab-buttons">
+        <p>Workspace</p>
+        <button class="tab-button" data-tab="1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="12"
+            height="12"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-hospital"
+          >
+            <path d="M12 6v4" />
+            <path d="M14 14h-4" />
+            <path d="M14 18h-4" />
+            <path d="M14 8h-4" />
+            <path
+              d="M18 12h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2"
+            />
+            <path d="M18 22V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v18" />
+          </svg>
+          General
+        </button>
+        <button class="tab-button" data-tab="2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-users"
+          >
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg
+          >Members
+        </button>
+        <button class="tab-button" data-tab="3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-folder-closed"
+          >
+            <path
+              d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+            />
+            <path d="M2 10h20" /></svg
+          >Groups
+        </button>
+        <button class="tab-button active" data-tab="4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-hash"
+          >
+            <line x1="4" x2="20" y1="9" y2="9" />
+            <line x1="4" x2="20" y1="15" y2="15" />
+            <line x1="10" x2="8" y1="3" y2="21" />
+            <line x1="16" x2="14" y1="3" y2="21" /></svg
+          >Phone numbers
+        </button>
+        <button class="tab-button" data-tab="5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-folder-kanban"
+          >
+            <path
+              d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"
+            />
+            <path d="M8 10v4" />
+            <path d="M12 10v2" />
+            <path d="M16 10v6" /></svg
+          >Plan & billing
+        </button>
+        <button class="tab-button" data-tab="6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shield-check"
+          >
+            <path
+              d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+            />
+            <path d="m9 12 2 2 4-4" /></svg
+          >Trust
+        </button>
+        <button class="tab-button" data-tab="7">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-notebook-tabs"
+          >
+            <path d="M2 6h4" />
+            <path d="M2 10h4" />
+            <path d="M2 14h4" />
+            <path d="M2 18h4" />
+            <rect width="16" height="20" x="4" y="2" rx="2" />
+            <path d="M15 2v20" />
+            <path d="M15 7h5" />
+            <path d="M15 12h5" />
+            <path d="M15 17h5" /></svg
+          >Contacts
+        </button>
+        <button class="tab-button" data-tab="8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-ban"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="m4.9 4.9 14.2 14.2" /></svg
+          >Blocklist
+        </button>
+        <button class="tab-button" data-tab="9">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-asterisk"
+          >
+            <path d="M12 6v12" />
+            <path d="M17.196 9 6.804 15" />
+            <path d="m6.804 9 10.392 6" /></svg
+          >Integrations
+        </button>
+        <button class="tab-button" data-tab="10">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-webhook"
+          >
+            <path
+              d="M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2"
+            />
+            <path
+              d="m6 17 3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06"
+            />
+            <path
+              d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8"
+            /></svg
+          >Webhooks
+        </button>
+        <p>Your account</p>
+        <button class="tab-button" data-tab="11">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-user-round"
+          >
+            <circle cx="12" cy="8" r="5" />
+            <path d="M20 21a8 8 0 0 0-16 0" /></svg
+          >Profile
+        </button>
+        <button class="tab-button" data-tab="12">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-sliders-horizontal"
+          >
+            <line x1="21" x2="14" y1="4" y2="4" />
+            <line x1="10" x2="3" y1="4" y2="4" />
+            <line x1="21" x2="12" y1="12" y2="12" />
+            <line x1="8" x2="3" y1="12" y2="12" />
+            <line x1="21" x2="16" y1="20" y2="20" />
+            <line x1="12" x2="3" y1="20" y2="20" />
+            <line x1="14" x2="14" y1="2" y2="6" />
+            <line x1="8" x2="8" y1="10" y2="14" />
+            <line x1="16" x2="16" y1="18" y2="22" /></svg
+          >Preferences
+        </button>
+        <button class="tab-button" data-tab="13">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-volume-2"
+          >
+            <path
+              d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"
+            />
+            <path d="M16 9a5 5 0 0 1 0 6" />
+            <path d="M19.364 18.364a9 9 0 0 0 0-12.728" /></svg
+          >Audio settings
+        </button>
+        <button class="tab-button" data-tab="14">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-bell"
+          >
+            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" /></svg
+          >Notifications
+        </button>
+        <button class="tab-button" data-tab="15">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-gift"
+          >
+            <rect x="3" y="8" width="18" height="4" rx="1" />
+            <path d="M12 8v13" />
+            <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" />
+            <path
+              d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"
+            /></svg
+          >Referrals
+        </button>
+      </div>
+      <div class="tab-content">
+        <button class="backButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-left"
+          >
+            <path d="M6 8L2 12L6 16" />
+            <path d="M2 12H22" />
+          </svg>
+          Back to phone numbers
+        </button>
+        <div class="tab-panel" id="tab-1">
+          <h2>Tab 1 Content</h2>
+          <p>This is the content for Tab 1.</p>
+        </div>
+        <div class="tab-panel" id="tab-2">
+          <h2>Tab 2 Content</h2>
+          <p>This is the content for Tab 2.</p>
+        </div>
+        <div class="tab-panel" id="tab-3">
+          <h2>Tab 3 Content</h2>
+          <p>This is the content for Tab 3.</p>
+        </div>
+        <div class="tab-panel active" id="tab-4">
+          <div class="phone">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-train-front"
+            >
+              <path d="M8 3.1V7a4 4 0 0 0 8 0V3.1" />
+              <path d="m9 15-1-1" />
+              <path d="m15 15 1-1" />
+              <path
+                d="M9 19c-2.8 0-5-2.2-5-5v-4a8 8 0 0 1 16 0v4c0 2.8-2.2 5-5 5Z"
+              />
+              <path d="m8 19-2 3" />
+              <path d="m16 19 2 3" />
+            </svg>
+            <h6 class="number">(415) 875-5793</h6>
+            <h2>San Francisco</h2>
+            <h6 class="manage">Manage different settings for this number</h6>
+            <div class="tab-functions">
+              <button class="tab-function active" data-tab="1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-phone-call"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                  <path d="M14.05 2a9 9 0 0 1 8 7.94" />
+                  <path d="M14.05 6A5 5 0 0 1 18 10" /></svg
+                >Calls
+              </button>
+              <button class="tab-function" data-tab="2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-message-square-more loud"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  />
+                  <path d="M8 10h.01" />
+                  <path d="M12 10h.01" />
+                  <path d="M16 10h.01" /></svg
+                >Messages
+              </button>
+              <button class="tab-function" data-tab="3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-users loud"
+                >
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg
+                >Users
+              </button>
+              <button class="tab-function" data-tab="4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-asterisk loud"
+                >
+                  <path d="M12 6v12" />
+                  <path d="M17.196 9 6.804 15" />
+                  <path d="m6.804 9 10.392 6" /></svg
+                >Integrations
+              </button>
+            </div>
+            <div class="function-content">
+              <div class="function-panel active" id="function-1">
+                <div class="call-section">
+                  <div class="general">
+                    <h4>General</h4>
+                    <p>Manage general call preference</p>
+                  </div>
+                  <div class="caller">
+                    <div class="id">
+                      <h5>Caller ID name</h5>
+                      <p>Customize what your recipents see when you call</p>
+                    </div>
+                    <button>Add caller ID name</button>
+                  </div>
+                  <hr />
+                  <div class="record-section">
+                    <div class="auto">
+                      <div class="record">
+                        <h5>Auto record calls</h5>
+                        <p>Automatically record all calls to this number</p>
+                      </div>
+                      <div cla>
+                        <button class="switch-btn" id="switchButton">
+                          <div class="circle"></div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="region">
+                      <p>
+                        Make sure you stay compliant with recording rules in
+                        your region
+                      </p>
+                      <button>X</button>
+                    </div>
+                  </div>
+                  <hr />
+                  <div>
+                    <div class="auto">
+                      <div class="record">
+                        <h5>International calling and messaging</h5>
+                        <p>
+                          Allow International calling and messaging on this
+                          phone region
+                        </p>
+                      </div>
+                      <div>
+                        <button class="switch-up" id="switchUp">
+                          <div class="circle-up"></div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="region-b">
+                      <p>
+                        Extra charges apply per message sent and spent on call
+                        per minutes. <a>Check rates</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="function-panel" id="function-2">
+                <h2>Message Content</h2>
+                <p>This is the message Content.</p>
+              </div>
+              <div class="function-panel" id="function-3">
+                <h2>Users Content</h2>
+                <p>This is the Users.</p>
+              </div>
+              <div class="function-panel" id="function-4">
+                <h2>Integrations Content</h2>
+                <p>This is the Integrations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-panel" id="tab-5">
+          <h2>Tab 5 Content</h2>
+          <p>This is the content for Tab 5.</p>
+        </div>
+        <div class="tab-panel" id="tab-6">
+          <h2>Tab 6 Content</h2>
+          <p>This is the content for Tab 6.</p>
+        </div>
+        <div class="tab-panel" id="tab-7">
+          <h2>Tab 7 Content</h2>
+          <p>This is the content for Tab 7.</p>
+        </div>
+        <div class="tab-panel" id="tab-8">
+          <h2>Tab 8 Content</h2>
+          <p>This is the content for Tab 8.</p>
+        </div>
+        <div class="tab-panel" id="tab-9">
+          <h2>Tab 9 Content</h2>
+          <p>This is the content for Tab 9.</p>
+        </div>
+        <div class="tab-panel" id="tab-10">
+          <h2>Tab 10 Content</h2>
+          <p>This is the content for Tab 10.</p>
+        </div>
+        <div class="tab-panel" id="tab-11">
+          <h2>Tab 11 Content</h2>
+          <p>This is the content for Tab 11.</p>
+        </div>
+        <div class="tab-panel" id="tab-12">
+          <h2>Tab 12 Content</h2>
+          <p>This is the content for Tab 12.</p>
+        </div>
+        <div class="tab-panel" id="tab-13">
+          <h2>Tab 13 Content</h2>
+          <p>This is the content for Tab 13.</p>
+        </div>
+        <div class="tab-panel" id="tab-14">
+          <h2>Tab 14 Content</h2>
+          <p>This is the content for Tab 14.</p>
+        </div>
+        <div class="tab-panel" id="tab-15">
+          <h2>Tab 15 Content</h2>
+          <p>This is the content for Tab 15.</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
